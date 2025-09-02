@@ -121,7 +121,7 @@ export default function HowItWorks() {
 
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-green-50 to-white h-[90vh] flex justify-center items-center py-24">
+      <div className="relative bg-gradient-to-br from-green-50 to-white lg:pt-40 pt-30 flex justify-center items-center pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl">

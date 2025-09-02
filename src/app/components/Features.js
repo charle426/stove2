@@ -95,7 +95,7 @@ export default function Features() {
                     <h3 className="text-md font-semibold text-gray-900 mb-2">{feature.title}</h3>
                 </div>
                 <p className="text-gray-600 flex-grow mb-4 text-xs">{feature.description}</p>
-                <Link 
+                {/* <Link 
                   href={feature.link} 
                   className="text-[#000080] hover:text-[#006400] font-medium inline-flex items-center group-hover:translate-x-1 transition-transform"
                 >
@@ -103,7 +103,7 @@ export default function Features() {
                   <svg className="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
-                </Link>
+                </Link> */}
               </div>
             </div>
           ))}

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
 
@@ -8,9 +8,13 @@ export default function Navbar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    setIsMenuOpen(false); // Close menu on route change
+  }, [pathname]);
+
   return (
     <nav className="flex justify-center items-center">
-      <div className='bg-[#ffffff73] shadow-lg fixed w-full backdrop-blur-3xl top-5 z-50 lg:max-w-5xl mx-auto rounded-full'>
+      <div className='bg-[#ffffff73] shadow-lg fixed w-full backdrop-blur-3xl lg:top-5 top-2 z-50 lg:max-w-5xl mx-auto rounded-full'>
       <div className="mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between items-center p-5">
           {/* Logo */}
@@ -57,7 +61,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-900 hover:text-orange-600 focus:outline-none focus:text-orange-600"
+              className="text-gray-900 hover:text-green-600 focus:outline-none focus:text-blue-600"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -74,7 +78,7 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col bg-white border-t">
             <Link href="/"  className={pathname === '/' ? `text-[#000080] px-3 py-2 text-sm font-medium transition-colors` : `text-gray-900 hover:text-[#000080] px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
               Home
             </Link>
@@ -90,17 +94,14 @@ export default function Navbar() {
             <Link href="/contact" className={pathname === '/contact' ? `text-[#000080] px-3 py-2 text-sm font-medium transition-colors` : `text-gray-900 hover:text-[#000080] px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
               Contact
             </Link>
-            <Link href="/pricing" className={pathname === '/pricing' ? `text-[#000080] px-3 py-2 text-sm font-medium transition-colors` : `text-gray-900 hover:text-[#000080] px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
+            {/* <Link href="/pricing" className={pathname === '/pricing' ? `text-[#000080] px-3 py-2 text-sm font-medium transition-colors` : `text-gray-900 hover:text-[#000080] px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
               Pricing
-            </Link>
+            </Link> */}
             <Link href="/how-it-works" className={pathname === '/how-it-works' ? `text-[#000080] px-3 py-2 text-sm font-medium transition-colors` : `text-gray-900 hover:text-[#000080] px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
               How It Works
             </Link>
             <Link href="/faq" className={pathname === '/faq' ? `text-[#000080] px-3 py-2 text-sm font-medium transition-colors` : `text-gray-900 hover:text-[#000080] px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
               FAQ
-            </Link>
-            <Link href="/contact" className="bg-orange-600 hover:bg-orange-700 text-white block px-3 py-2 rounded-md text-base font-medium mt-4">
-              Get Quote
             </Link>
           </div>
         </div>

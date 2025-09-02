@@ -113,9 +113,9 @@ export default function FAQ() {
 
   return (
     <section>
-    <div className="min-h-screen bg-white">
+    <div className="pt-30 lg:pt-40 bg-white via-white to-[#006400]/5 bg-gradient-to-br from-[#000080]/5">
       {/* Header Section */}
-      <div className="bg-gradient-to-br from-[#000080]/5 min-h-[90vh] flex items-center justify-center via-white to-[#006400]/5 py-16 px-4 sm:px-6 lg:px-8">
+      <div className=" flex items-center justify-center  py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4">
             Frequently Asked Questions

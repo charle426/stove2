@@ -40,7 +40,7 @@ export default function Contact() {
       
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-50 to-blue-50 py-20">
-        <div className="lg:pt-20 mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="lg:pt-40 pt-20 mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Get in touch
           </h1>

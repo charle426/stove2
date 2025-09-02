@@ -58,7 +58,7 @@ export default function About() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-50 md:py-40 to-blue-100 py-20 ">
+      <section className="bg-gradient-to-r from-blue-50 md:py-40 to-blue-100 py-30 ">
         <div className="max-w-7xl flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             About Stove

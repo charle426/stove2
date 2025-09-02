@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function EnvironmentalCommitment() {
   return (
     <div className="min-h-screen bg-white">
-      <section className="bg-blue-50 min-h-[90vh] flex justify-center items-center" style={{ backgroundImage: "url('/envCommImage/Selection.png')" }}>
+      <section className="bg-blue-50 py-30 lg:py-40 flex justify-center items-center" style={{ backgroundImage: "url('/envCommImage/Selection.png')" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Journey Towards a Greener Africa</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">At Stove Africa, our commitment to sustainability drives every decision. We

@@ -91,16 +91,17 @@ export default function Services() {
     <div className=" bg-white">
       
       {/* Hero Section */}
-      <section className="bg-blue-50 pb-20 pt-40 md:h-screen">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="bg-blue-50 pb-20 md:pt-30 pt-30 flex flex-col lg:flex-row items-center justify-between">
+        <div className="max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our Stove Services
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl">
             Comprehensive stove services to keep your kitchen running smoothly. 
             From installation to emergency repairs, we've got you covered.
           </p>
         </div>
+        <img src="/heroImage/hero.png" className="w-full h-auto max-w-[700px]" alt="Stove Services" />
       </section>
 
       {/* Services Grid */}

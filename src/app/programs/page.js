@@ -60,7 +60,7 @@ export default function Programs() {
       </section>
 
       {/* Programs Grid */}
-      <section className="py-20 px-4 sm:px-8 lg:px-16">
+      <section className="py-30 lg:py-40 px-4 sm:px-8 lg:px-16">
         <h2 className="text-3xl md:text-4xl font-bold text-[#006400] mb-10 w-full text-center">Explore Our initiatives</h2>
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
