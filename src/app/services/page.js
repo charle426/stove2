@@ -1,5 +1,6 @@
-
 import Link from 'next/link'
+import Image from "next/image";
+
 export default function Services() {
   const services = [
     {
@@ -101,7 +102,7 @@ export default function Services() {
             From installation to emergency repairs, we've got you covered.
           </p>
         </div>
-        <img src="/heroImage/hero.png" className="w-full h-auto max-w-[700px]" alt="Stove Services" />
+  <Image src="/heroImage/hero.png" alt="Stove Services" width={700} height={400} className="w-full h-auto max-w-[700px]" />
       </section>
 
       {/* Services Grid */}
@@ -115,7 +116,7 @@ export default function Services() {
               >
                 {/* Icon */}
                 <div className={`w-full rounded-xl ${getColorClasses(service.color)} flex items-center justify-center mb-6`}>
-                  <img src={service.image} w-full/>
+                  <Image src={service.image} alt="Service" width={400} height={300} className="w-full" />
                 </div>
 
                 {/* Content */}

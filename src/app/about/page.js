@@ -1,25 +1,26 @@
+import Image from "next/image";
 
 export default function About() {
   const values = [
     {
-      title: "Customer-Centricity",
-      description: "We put our users at the heart of everything we do, striving to understand their needs and exceed their expectations with every interection."
+      title: "Simplicity",
+      description: "We turn complex tasks into stress-free experiences."
+    },
+    {
+      title: "Speed",
+      description: "Fast service delivery, every single time."
+    },
+    {
+      title: "Trust",
+      description: "Reliability, safety, and transparency in all we do"
     },
     {
       title: "Innovation",
-      description: "We continuously seek new and better ways to deliver services, embracing technology to solve complex problems and create value."
+      description: "Smart technology solutions for everyday challenges"
     },
     {
-      title: "Integrity",
-      description: "We operate with honesty, transparency, and ethical conduct, building trust with our customers, partners, and employees."
-    },
-    {
-      title: "Community Impact",
-      description: "We are dedicated to making a postive difference in the communities we serve,  contributing to local ecnomies and social well-being."
-    },
-    {
-      title: "Excellence",
-      description: "We are committed to delivering high-quality services and achieving exceptional results in all aspects of our operations."
+      title: "Impact",
+      description: "Creating positive change in communities across Africa"
     }
   ];
 
@@ -79,29 +80,22 @@ export default function About() {
                 Our Story
               </h2>
               <div className="space-y-4 text-gray-600 text-sm">
+                <p>Life in Africa can sometimes feel complicated – from the hassle of refilling gas, to paying bills, managing waste, and moving goods across boundaries.</p>
                 <p>
-                  Founded with a vision to revolutionize access to essential
-                  services across Africa, Stove Africa began its journey in
-                  2023. We recognized the daily challenges individuals and
-                  businesses faced in managing their utilities - from fuel
-                  procurement to bill payments and waste management.
-                  Our founders envisioned a unified, accessible platform
-                  that leverages technology to bridge these gaps, fostering
-                  convenience and efficiency in everyday life.
+                  At Stove Africa, we believe everyday life should be simple, faster, and smarter.
+                  From gas refills to bill payments, waste disposal, and logistics – daily tasks in Africa often take more time and effort than they should.
                 </p>
                 <p>
-                  From humble beginnings, we've grown into a dynamic
-                  team committed to innovation and community impact.
-                  Our commitment extends beyond mere transactions; we
-                  aim to empower our users, enhance urban living, and
-                  contribute positively to the economic development of
-                  the continent. Every service we offer is a step towards a
-                  more connected and streamlined Africa.
+                  We set out to change that.
+                  What started as a gas ordering solution has evolved into a lifestyle utility brand – a one-stop app that brings essential services right to your fingertips.
+                </p>
+                <p>
+                  With Stove Africa, you no longer have to juggle multiple vendors. Everything you need to power your home or business is just a tap away. We are not just building a service; we are building a smarter way of life. We aim to empower our users, enhance urban and pre-urban living, and contribute positively to the economic development of the continent.
                 </p>
               </div>
             </div>
             <div className="">
-              <img src="/aboutImage/Selection.png" className='rounded-xl w-full' />
+              <Image src="/aboutImage/Selection.png" alt="About Stove Africa" width={500} height={300} className='rounded-xl w-full' />
             </div>
           </div>
         </div>
@@ -110,45 +104,42 @@ export default function About() {
       {/*Our Mission Our Values */}
       <section className="bg-gray-50 py-20">
         <div className="flex w-full justify-between max-w-[1100px] items-center md:flex-row flex-row mx-auto px-4 sm:px-6 gap-6 lg:px-8">
-              <div className="max-w-[500px]">
-                <h3 className="text-[1.5rem] font-bold text-[#006400] mb-4 ">
-                  Our Mission
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  To provide reliable, accessibe,and innovative
-                  utility services that simplify daily life for every individual and business
-                  in Africa, fostering convenience, growth, and sustainable community development.
-                </p>
-              </div>
-              <div className="max-w-[500px]">
-                <h3 className="text-[1.5rem] font-bold text-[#000080] mb-4">
-                  Our vision
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  To be the leading digital platform for integrated utility solutions across Affica,
-                  recognized for our seamless service delivery, technological excellence, and profound positive impact on society
-                </p>
-              </div>
+          <div className="max-w-[500px]">
+            <h3 className="text-[1.5rem] font-bold text-[#006400] mb-4 ">
+              Our Mission
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              To simplify everyday living in Africa by offering fast, reliable, and tech-driven utility services that save time, reduce stress, enable ease of doing business and create smarter lifestyle for everyone.
+            </p>
+          </div>
+          <div className="max-w-[500px]">
+            <h3 className="text-[1.5rem] font-bold text-[#000080] mb-4">
+              Our vision
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              To be Africa’s leading lifestyle utility platform, trusted by millions of households and businesses as the easiest way to manage daily essentials in one place.
+            </p>
+          </div>
         </div>
       </section>
       {/* Our Core Value */}
       <section className="flex flex-col gap-7 items-center px-2 lg:px-16 py-10">
         <h2 className="text-[#006400] font-bold text-xl">Our Core Values</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-            {values.map((value, index) => (
-              <div key={index} className="px-5 py-1 border-l-3 odd:border-[#006400] bg-white hover:border-3 transition-[0.5s] ease-in rounded-3xl">
-                
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                  {value.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {value.description}
-                </p>
-              </div>
-            ))}
-          </div>
+          {values.map((value, index) => (
+            <div key={index} className="px-5 py-1 border-l-3 odd:border-[#006400] bg-white hover:border-3 transition-[0.5s] ease-in rounded-3xl">
+
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                {value.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {value.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
-      
+
 
       {/* Team */}
       <section className="py-20 bg-blue-100 flex">
@@ -163,7 +154,7 @@ export default function About() {
             {team.map((member, index) => (
               <div key={index} className="text-center flex-col flex gap-2 rounded-t-md border-b-3 py-2 px-4 max-w-[200px] border-[#006400] bg-white">
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto">
-                  <img src={member.image} width='100%'/>
+                  <Image src={member.image} alt="Team Member" width={100} height={100} />
                 </div>
                 <h3 className="text-md font-semibold text-gray-700">
                   {member.name}
@@ -190,12 +181,17 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-">
           <div className="rounded-2xl">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Ready to Work with Us?
+              Stove for Business
             </h3>
-            <p className="text-lg text-gray-600 mb-8 max-w-xl">
-              Experience the Stove difference. Contact us today for professional,
-              reliable stove services you can trust.
-            </p>
+            <div className="mb-6">
+              <p className="text-lg text-gray-600 mb-3 max-w-xl">
+                Ready to power change and drive transformation ?
+              </p>
+              <p>
+                Join thousands of suppliers and service personnel's committed to drive convenience that empowers lifestyle.
+              </p>
+            </div>
+
             <div className="flex flex-col gap-4">
               <button className="bg-[#000080] hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-200">
                 Get Started
@@ -206,7 +202,7 @@ export default function About() {
             </div>
           </div>
           <div>
-            <img src="/aboutImage/bizwomen.png"/>
+            <Image src="/aboutImage/bizwomen.png" alt="Bizwomen" width={500} height={300} />
           </div>
         </div>
       </section>

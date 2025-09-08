@@ -1,40 +1,42 @@
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Programs() {
   const programs = [
     {
       title: "Education & Literacy",
       subtitle: 'Future Leaders Scholarship Program',
-      description: "Supporting bright young minds in underserved communities by providing scholarships and educational resources.",
+      description: "We are committed in supporting bright young minds in underserved communities by providing scholarships and educational resources.",
       image: '/programsImage/Selection (1).png'
     },
     {
       title: "Environmental Sustainability",
       subtitle: 'Green Africa Initiative',
-      description: "Promoting ecological balance through tree planting campaigns waste reduction education, and sustainable",
+      description: "Our ecological commitment runs through promoting eco-friendly waste disposal, recycling, tree planting and promoting blue ocean initiatives",
       image: '/programsImage/Selection (2).png'
     },
     {
-      title: "Community Health",
-      subtitle: 'Healthy Homes Project',
-      description:'Providing access to clean water, sanitation facilities, and basic health education to improve well being',
+      title: "Energy for all",
+      subtitle: 'Healthy Homes',
+      description:'Supporting househods and samll business with access to safe, affordable cooking and solar energy system solutions',
      image: '/programsImage/Selection (3).png'
     },
     {
-      title: 'Digital Empowerment',
-      subtitle: "Tech for All Program",
-      description:'Bridging the digital divide by offering free computer literacy courses and internet access, enabling communties',
+      title: 'Smart Living Education',
+      subtitle: "Tech for All",
+      description:'Empowering communites with knowledge on sustainable living and digital utility solution',
      image: '/programsImage/Selection (4).png'
     },
     {
-      title: "Economic Empowerment",
+      title: "Youth & Job Creation",
       subtitle: 'Local Business Growth Accelerator',
-      description:'Supporting small and medium-size enterprises with training, mentorship and micro-financing to boost local',
+      description:'Creating opportunities and building skills through tech-driven services and supporting small and medium size businesses',
      image: '/programsImage/Selection (5).png'
     },
     {
-      title: "Clean Energy Solutions",
-      subtitle: 'Sustainable Energy Solutions',
-      description:'Introducing affordable and clean cooking solutions and solar energy systems to households',
+      title: "Community Fitness And Health Initiatives",
+      subtitle: 'Healthy Community',
+      description:"Our Community Fitness & Health Initiative brings people together through fitness programs, health awareness, and active lifesyles, Together we're buiding healthier, stronger communities across Africa",
      image: '/programsImage/Selection (6).png'
     },
   ];
@@ -46,15 +48,14 @@ export default function Programs() {
       <section className="py-20 lg:pt-30 min-h-[90vh] flex justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-[#006400] mb-6">
-            Our Impactful Community Programs
+            Our Programs - Stove Africa
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            At Stove Africa, we believe in giving back to the communities we serve,
-            Explore our initiatives focused on education, environmental sustainablilty,
-            and economic empowerment, driving positive change across Africa.
+            At Stove Africa, we believe technology should not only make life simple, faster and smarter, but also improve the communities we serve.
+            That's why we invest in impactful urban and community programs designed to create real change.
           </p>
           <div>
-            <img src="/programsImage/Selection.png" className='w-full rounded-md mt-10 mx-auto max-w-3xl' />
+            <Image src="/programsImage/Selection.png" alt="Programs" width={700} height={400} className='w-full rounded-md mt-10 mx-auto max-w-3xl' />
           </div>
         </div>
       </section>
@@ -70,7 +71,7 @@ export default function Programs() {
                 className='relative space-y-2 overflow-hidden bg-white rounded-t-2xl group transition-all duration-300 hover:-translate-y-2'
               >
                 <div>
-                  <img src={program.image} className="group-hover:scale-105 duration-300 transition-all"/>
+                  <Image src={program.image} alt="Program" width={400} height={300} className="group-hover:scale-105 duration-300 transition-all"/>
                 </div>
                 <div className="space-y-2 px-3">
                   <h3 className="w-full text-center rounded-[50px] py-1 text-white bg-[#000080] font-medium">{program.title}</h3>
@@ -134,10 +135,10 @@ export default function Programs() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gray-900 py-20">
+      <section className="bg-blue-600 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Get Started?
+            Partner with us for Impact
           </h2>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -145,6 +146,21 @@ export default function Programs() {
             <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200">
               Contact Sales
             </button>
+          </div>
+        </div>
+      </section>
+      <section className="bg-gray-900 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to Get Started?
+          </h2>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href='/contact'>
+            <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200">
+              Contact Sales
+            </button></Link>
+            
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function Features() {
   const features = [
@@ -72,7 +73,7 @@ export default function Features() {
               </Link>
                 </div>
                 <div>
-                  <img src="/heroImage/Selection (1).png" alt="About Stove Africa" className="w-full max-w-md flex justify-end lg:float-right h-auto mt-5 lg:mt-0 rounded-2xl shadow-b-lg" />
+                  <Image src="/heroImage/Selection (1).png" alt="About Stove Africa" width={400} height={300} className="w-full max-w-md flex justify-end lg:float-right h-auto mt-5 lg:mt-0 rounded-2xl shadow-b-lg" />
                 </div>
               </div>
             </div>
@@ -89,7 +90,7 @@ export default function Features() {
           {features.map((feature, index) => (
             <div key={index} className="relative group">
               <div className="h-full bg-white transition-shadow flex flex-col">
-                <img src={feature.image} alt={feature.title} className="w-full rounded-t-lg h-auto mb-4 group-hover:shadow-b-lg" />
+                <Image src={feature.image} alt={feature.title} width={400} height={300} className="w-full rounded-t-lg h-auto mb-4 group-hover:shadow-b-lg" />
                 <div className='flex w-full gap-1 mb-2'>
                   <div className="">{feature.icon}</div>
                     <h3 className="text-md font-semibold text-gray-900 mb-2">{feature.title}</h3>
@@ -177,7 +178,7 @@ export default function Features() {
               </div>
             </div>
             <div className="flex justify-center md:justify-end">
-              <img src="/heroImage/Selection (6).png" alt="Stove App Preview" className="w-full max-w-md rounded-2xl shadow-lg" />
+              <Image src="/heroImage/Selection (6).png" alt="Stove App Preview" width={400} height={300} className="w-full max-w-md rounded-2xl shadow-lg" />
             </div>
           </div>
         </div>

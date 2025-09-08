@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -14,7 +15,7 @@ export default function Hero() {
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-[#006400]/10 rounded-full opacity-20 animate-pulse delay-1000" />
       <div className="absolute top-1/2 left-20 w-16 h-16 bg-[#000080]/10 rounded-full opacity-20 animate-pulse delay-500" />
 
-      <div className="relative w-full px-4 sm:px-6 lg:px-20 pt-32 lg:pt-">
+      <div className="relative w-full px-4 sm:px-6 lg:px-20 pt-32 lg:pt-16">
         <div className="flex flex-col lg:flex-row gap-12 lg:items-center justify-between">
           {/* Left Content */}
           <div>
@@ -29,7 +30,7 @@ export default function Hero() {
 
           {/* Right Content - Image/Illustration */}
           <div className="relative lg:left-26 flex justify-center lg:justify-end">
-           <img src="/servicesImage/hero.png" alt="Stove Services" className="w-full max-w-[600px]" />
+           <Image src="/servicesImage/hero.png" alt="Stove Services" width={600} height={400} className="w-full max-w-[600px]" />
           </div>
         </div>
     </div>

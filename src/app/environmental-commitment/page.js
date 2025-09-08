@@ -1,5 +1,6 @@
 import { Leaf, Recycle, Sprout } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function EnvironmentalCommitment() {
   return (
@@ -18,7 +19,7 @@ export default function EnvironmentalCommitment() {
         <div className="space-y-20">
           <div className="flex flex-col md:flex-row gap- w-full items-center justify-between">
             <div className="w-full">
-              <img src="/envCommImage/Selection (1).png" className='w-full rounded-md max-w-[500px]' />
+              <Image src="/envCommImage/Selection (1).png" alt="Environmental Commitment" width={500} height={300} className='w-full rounded-md max-w-[500px]' />
             </div>
             <div className="w-full max-w-[600px]">
               <h3 className="text-xl md:text-2xl font-semibold mb-5">Sustainable Sourcing & Operations</h3>
@@ -34,7 +35,7 @@ export default function EnvironmentalCommitment() {
           </div>
           <div className="flex flex-col-reverse md:flex-row-reverse gap-8 w-full items-center justify-between">
             <div className="w-full flex lg:justify-end justify-center">
-              <img src="/envCommImage/Selection (2).png" className='w-full rounded-md max-w-[500px]' />
+              <Image src="/envCommImage/Selection (2).png" alt="Environmental Commitment" width={500} height={300} className='w-full rounded-md max-w-[500px]' />
             </div>
             <div className="w-full max-w-[600px]">
               <h3 className="text-xl md:text-2xl font-semibold mb-5">Waste Reduction & Recycling
@@ -55,7 +56,7 @@ export default function EnvironmentalCommitment() {
           </div>
           <div className="flex flex-col md:flex-row gap-8 w-full items-center justify-between">
             <div className="w-full flex">
-              <img src="/envCommImage/Selection (3).png" className='w-full rounded-md max-w-[500px]' />
+              <Image src="/envCommImage/Selection (3).png" alt="Environmental Commitment" width={500} height={300} className='w-full rounded-md max-w-[500px]' />
             </div>
             <div className="w-full max-w-[600px]">
               <h3 className="text-xl md:text-2xl font-semibold mb-5">Community & Eco-Education
@@ -101,7 +102,7 @@ export default function EnvironmentalCommitment() {
       <section className="py-20 md:px-16 px-2 my-16">
         <div className="flex flex-col md:flex-row gap-8 w-full mb-10 items-center justify-between">
           <div className="w-full flex">
-            <img src="/envCommImage/Selection (4).png" className='w-full rounded-md max-w-[500px]' />
+            <Image src="/envCommImage/Selection (4).png" alt="Environmental Commitment" width={500} height={300} className='w-full rounded-md max-w-[500px]' />
           </div>
           <div className="w-full max-w-[600px]">
             <h3 className="text-xl md:text-2xl font-semibold mb-5">Investing in a Sustainable Future</h3>

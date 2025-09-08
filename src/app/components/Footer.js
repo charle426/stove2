@@ -1,20 +1,20 @@
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#006400] text-white">
+    <footer className="bg-[#000084] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center">
-                <img src='/logo.png' className="w-full" />
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                <Image src='/logo.png' alt='Stove Africa Logo' width={120} height={40} className="w-full" />
               </div>
             </div>
-            <p className="text-gray-100 mb-6 max-w-md">
-              Your trusted partner in professional stove services. We provide expert installation, 
-              repair, and maintenance services to keep your home safe and efficient.
+            <p className="text-gray-100 mb-6 max-w-md text-sm">
+              Convenience is the new normal. Stove Africa is the everyday lifestyle utility brand that makes life simple, faster, and smarter.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-200 hover:text-[#006400] transition-colors">

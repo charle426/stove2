@@ -1,33 +1,37 @@
+'use client'
+import { BlogAll } from "../components/blog";
+import Image from 'next/image'
 export default function Blog() {
-  const posts = [
-    { title: "Stove Safety Tips", excerpt: "Keep your kitchen safe with these essential tips.", date: "Aug 2025" },
-    { title: "Gas vs Electric vs Induction", excerpt: "Pros and cons to help you choose.", date: "Aug 2025" },
-    { title: "Maintenance Checklist", excerpt: "A simple schedule to extend lifespan.", date: "Jul 2025" }
-  ];
+
 
   return (
-    <div className="min-h-screen bg-white">
-      <section className="bg-gradient-to-r from-orange-50 to-red-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Resources & Blog</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">Guides, tips, and updates from our team.</p>
-        </div>
-      </section>
-
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {posts.map((post, idx) => (
-              <article key={idx} className="bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition">
-                <div className="text-sm text-gray-500 mb-2">{post.date}</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{post.title}</h3>
-                <p className="text-gray-600">{post.excerpt}</p>
-              </article>
-            ))}
+    <>
+      <section className=" bg-cover bg-no-repeat bg-center object-cover overflow-hidden relative">
+       
+        <div
+          className=" bg-cover bg-no-repeat mb-10 object-cover py-10 md:py-40 md:px-10 px-4 duration-500 w-full flex justify-center items-center"
+        >
+         <div>
+           <h1 className="sm:text-5xl text-5xl mb-10 relative z-20 text-[4rem] w-full text-center font-semibold">
+            Insights & Inspiration: Stove Africa's Blog
+          </h1>
+          <p>Dive into our latest news, helpful tips, and comprehensive guides designed to simplify your everyday utility service and inspire a sustainable lifestyle</p>
+         </div>
+          <div className="w-full">
+            <Image
+              src="/stove.jpg"
+              alt="Stove Africa"
+              width={500}
+              height={300}
+              className="rounded-lg shadow-md"
+            />
           </div>
-        </div>
-      </section>
-    </div>
+              </div>
+                    <section className="md:px-10 z-20 bg-cover bg-no-repeat bg-center object-cover overflow-hidden md:pb-10 px-2 mb-6 relative">
+        <BlogAll />
+      </section> 
+      </section> 
+    </>
   );
 }
 

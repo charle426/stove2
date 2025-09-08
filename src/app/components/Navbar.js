@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -21,7 +22,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <div className="w-10 h-10 bg-gradient-to-r rounded-lg flex items-center justify-center">
-                <img src='/logo.png' className="w-full" />
+                <Image src='/logo.png' alt='Stove Africa Logo' width={120} height={40} className="w-full" />
               </div>
              
             </Link>
