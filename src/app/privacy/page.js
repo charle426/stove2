@@ -1,3 +1,4 @@
+import Link from "next/link"
 export default function Privacy() {
   return (
     <div className="min-h-screen bg-white">
