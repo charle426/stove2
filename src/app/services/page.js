@@ -6,73 +6,46 @@ export default function Services() {
     {
       image: '/servicesImage/Selection.png',
       title: "Gasoline Delivery",
-      description: "Never run out of fuel again. Order gasoline directly to your location quickly and safely, whenever you need it.",
+      description: "Never run out of cooking gas again. Order LPG, petrol, diesel, or CNG from your phone and get it delivered straight to your doorstep.",
       features: [
-        "Convenient doorstep delivery",
-        "24/7 availability",
-        "Competitive pricing",
-        "Safe and secure handling",
+        "Safe & reliable refills",
+        "Fast delivery within minutes",
+        "Verified suppliers for trusted service",
       ],
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8v-2a2 2 0 012-2h2a2 2 0 012 2v2m-6 0h12a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2m6 0v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2m6 0v-2a2 2 0 012-2h2a2 2 0 012 2v2" />
-        </svg>
-      ),
-      color: "orange"
+      cta: "Order Gas Now"
     },
     {
       image: '/servicesImage/Selection (1).png',
       title: "Bill Payment",
-      description: "Simplify your life by paying all your utility bills, airtime, data subscriptions instantly and securely through our platform.",
+      description: "Pay bills in seconds, Electrity, water, internet, TV subscribtions all in one secure app.",
       features: [
-        "One-stop bill payment",
-        "Instant transaction confirmation",
-        "Secure payment gateway",
-        "Reminders for due dates",
+        "Instant confirmation",
+        "Easy cashless payment",
+        "Available 24/7",
       ],
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
-      color: "red"
+      cta: "Pay Your Bills"
     },
     {
       image: '/servicesImage/Selection (2).png',
       title: "Waste Disposal",
-      description: "Efficient and eco-friendly waste collection services designed to keep your environment clean and healthy. Schedule pickups with ease.",
+      description: "Cleaner cities, healthier living. Book on-demand or schedule waste collection right from your phone.",
       features: [
-        "24/7 availability",
-        "Same-day response",
-        "Emergency diagnostics",
-        "Quick fixes",
-        "Safety first approach"
+        "Eco-friendly disposal methods",
+        "Reliable collection network",
+        "Recycling and Reuseables",
       ],
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      color: "green"
+      cta: "Book Waste Pickup"
     },
     {
       image: '/servicesImage/Selection (3).png',
-      title: "Courier Services",
-      description: "Reliable and fast delivery for packages and documents. From small parcels to critical documents, we ensure secure and timely transport.",
+      title: "Logistics & Shipping",
+      description: "Move anything, anywhere, From local deliveries to interstate cargo and even air shipping, Stove Africa makes logistics seamless.",
       features: [
-        "Gas leak detection",
-        "Carbon monoxide testing",
-        "Ventilation assessment",
-        "Safety compliance check",
-        "Detailed inspection report"
+        "Door-to-door delivery",
+        "Transparent pricing",
+        "Secure & fast shipping",
       ],
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-      ),
-      color: "yellow"
+      cta: 'Send a Package'
     },
   ];
 
@@ -95,11 +68,10 @@ export default function Services() {
       <section className="bg-blue-50 pb-20 md:pt-30 pt-30 flex flex-col lg:flex-row items-center justify-between">
         <div className="max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our Stove Services
+            Comprehensive Utility Services, Unified For You
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
-            Comprehensive stove services to keep your kitchen running smoothly. 
-            From installation to emergency repairs, we've got you covered.
+            At Stove Africa, we simplify everyday living by bringing essential services into one smart platform. Whether its energy, payments, waste, or logistics, we've got you covered.
           </p>
         </div>
   <Image src="/heroImage/hero.png" alt="Stove Services" width={700} height={400} className="w-full h-auto max-w-[700px]" />
@@ -138,8 +110,15 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-
-              
+                  <div className='my-6 flex justify-end'>
+ <a 
+                href="https://stove.com.ng/register.php" target='_blank'
+                className="bg-[#006400] hover:bg-[#006400e1] mr-5 text-white px-4 py-2 rounded-[60px] text-sm font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                {service.cta}
+              </a>
+                  </div>
+                  
               </div>
             ))}
           </div>
@@ -153,7 +132,7 @@ export default function Services() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-gray-300 mb-6 max-w-md mx-auto">
-            Don't let stove problems disrupt your kitchen. Contact us today for professional service.
+           Join millions of users experience the convenience of everyday lifestyle utility services. Download app and Signup now
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href='/contact'>

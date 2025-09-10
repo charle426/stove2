@@ -37,7 +37,7 @@ export default function About() {
       role: "Operations Manager",
       experience: "15+ years",
       bio: "Ensures every project runs smoothly and every customer receives the exceptional service they deserve.",
-      image: "/aboutImage/team-5.png"
+      image: "/aboutImage/team-5.jpg"
     },
     {
       name: "Zola Dlamini",
@@ -51,7 +51,7 @@ export default function About() {
       role: "Customer Experience Lead",
       experience: "12+ years",
       bio: "Dedicated to ensuring every customer has a positive experience from first contact to final service completion.",
-      image: "/aboutImage/team-2.png"
+      image: "/aboutImage/team-2.jpg"
     }
   ];
 
@@ -62,11 +62,10 @@ export default function About() {
       <section className="bg-gradient-to-r from-blue-50 md:py-40 to-blue-100 py-30 ">
         <div className="max-w-7xl flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            About Stove
+            About Us - Stove Africa
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your trusted partner in stove safety and performance for over 15 years.
-            We're committed to keeping your kitchen running smoothly and safely.
+           Your Everyday Utility Services, Simplified.
           </p>
         </div>
       </section>
@@ -103,7 +102,7 @@ export default function About() {
 
       {/*Our Mission Our Values */}
       <section className="bg-gray-50 py-20">
-        <div className="flex w-full justify-between max-w-[1100px] items-center md:flex-row flex-row mx-auto px-4 sm:px-6 gap-6 lg:px-8">
+        <div className="flex w-full justify-between max-w-[1100px] items-center md:flex-row flex-col mx-auto px-4 sm:px-6 gap-6 lg:px-8">
           <div className="max-w-[500px]">
             <h3 className="text-[1.5rem] font-bold text-[#006400] mb-4 ">
               Our Mission
@@ -124,7 +123,7 @@ export default function About() {
       </section>
       {/* Our Core Value */}
       <section className="flex flex-col gap-7 items-center px-2 lg:px-16 py-10">
-        <h2 className="text-[#006400] font-bold text-xl">Our Core Values</h2>
+        <h2 className="text-[#006400] font-bold text-xl no-wrap">Our Core Values</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {values.map((value, index) => (
             <div key={index} className="px-5 py-1 border-l-3 odd:border-[#006400] bg-white hover:border-3 transition-[0.5s] ease-in rounded-3xl">
@@ -150,11 +149,11 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full max-w-[1000px]  justify-center">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 w-full max-w-[1000px] items-center md:items-start  justify-center">
             {team.map((member, index) => (
-              <div key={index} className="text-center flex-col flex gap-2 rounded-t-md border-b-3 py-2 px-4 max-w-[200px] border-[#006400] bg-white">
+              <div key={index} className="text-center flex-col flex gap-2 rounded-t-md border-b-3 py-2 px-4 min-h-[210px] max-w-[200px] border-[#006400] bg-white">
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto">
-                  <Image src={member.image} alt="Team Member" width={100} height={100} />
+                  <Image src={member.image} alt="Team Member" width={100} height={100} className="rounded-full" />
                 </div>
                 <h3 className="text-md font-semibold text-gray-700">
                   {member.name}
@@ -178,9 +177,9 @@ export default function About() {
 
       {/* CTA Section */}
       <section className="py-20 bg-green-50 md:px-16 ">
-        <div className="flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-">
-          <div className="rounded-2xl">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+        <div className="flex flex-col-reverse md:flex-row justify-between gap-8 items-center px-4 sm:px-6 lg:px-">
+          <div className="rounded-2xl w-full max-w-[550px]">
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Stove for Business
             </h3>
             <div className="mb-6">
@@ -192,7 +191,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex gap-4">
               <button className="bg-[#000080] hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-200">
                 Get Started
               </button>

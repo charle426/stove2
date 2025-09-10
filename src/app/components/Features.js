@@ -9,7 +9,7 @@ export default function Features() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
         </svg>
       ),
-      image: '/heroImage/Selection (2).png',
+      image: '/heroImage/gas.jpeg',
       title: "Gasoline Delivery",
       description: "On-demand, reliable gasoline delivery directly to your location, saving you time and hassle.",
       color: "navy",
@@ -22,7 +22,7 @@ export default function Features() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      image: '/heroImage/Selection (3).png',
+      image: '/heroImage/bills.jpeg',
       title: "Bill Payments",
       description: "Conveniently pay your utility bills, airtime, and data subscriptions from the comfort of your home.",
       color: "navy",
@@ -36,7 +36,7 @@ export default function Features() {
       ),
       image: '/heroImage/Selection (4).png',
       title: "Waste Management",
-      description: "Efficient and environmentally friendly waste collection and disposal services for homes and businesses.",
+      description: "Dispose smart, recycle easy—book your waste pickup today",
       color: "green",
       link: "/services#emergency"
     },
@@ -47,8 +47,8 @@ export default function Features() {
         </svg>
       ),
       image: '/heroImage/Selection (5).png',
-      title: "Logistics Services",
-      description: "Comprehensive safety inspections and gas leak detection to ensure your stove operates safely.",
+      title: "Courier Services",
+      description: "From your city to across Country, Business or Personal, Big or Small. We make shipping and delivery simple, affordable, and stress-free.",
       color: "navy",
       link: "/services#safety"
     }
@@ -63,8 +63,8 @@ export default function Features() {
               <div className='flex flex-col lg:flex-row justify-between w-full *:w-full items-center gap-10 lg:gap-20'>
                 <div className='max-w-[450px] flex flex-col gap-3'>
                   <p>
-                    We envision a future where accessing daily necessities and managing logistics is effortless, empowering communities and fostering growth through innovative solutions. We are dedicated to providing seamless, trustworthy, and affordable services that improve quality of life.
-                  </p>
+                   At Stove Africa, we’re here to make your everyday life stress-free. Need a quick cooking gas, fuel, diesel supply and CNG refill. or need help with paying bills? Want to dispose of waste or send and ship packages without hassle? Our all-in-one app puts these services right at your fingertips. With Stove Africa, you save time, cut stress, and enjoy the comfort of reliable services delivered straight to your doorstep.
+                   </p>
                   <Link 
                 href="/about" 
                 className="bg-[#006400] w-fit hover:bg-[#006400e1] text-white px-4 py-2 mt-4 rounded-[20px] font-medium text-sm transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -73,7 +73,7 @@ export default function Features() {
               </Link>
                 </div>
                 <div>
-                  <Image src="/heroImage/Selection (1).png" alt="About Stove Africa" width={400} height={300} className="w-full max-w-md flex justify-end lg:float-right h-auto mt-5 lg:mt-0 rounded-2xl shadow-b-lg" />
+                  <Image src="/heroImage/about.jpeg" alt="About Stove Africa" width={400} height={300} className="w-full max-w-md flex justify-end lg:float-right h-auto mt-5 lg:mt-0 rounded-2xl shadow-b-lg" />
                 </div>
               </div>
             </div>
@@ -82,7 +82,6 @@ export default function Features() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Professional stove services tailored to meet your needs with expertise and care
           </p>
         </div>
         

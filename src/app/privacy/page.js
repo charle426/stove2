@@ -4,7 +4,7 @@ export default function Privacy() {
       {/* Header Section */}
       <div className="bg-gradient-to-br from-[#000080]/5 via-white to-[#006400]/5 py-16 px-4 sm:px-6 min-h-[90vh] flex justify-center items-center lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#006400] mb-4">
             Privacy Policy & Terms of Service
           </h1>
           <p className="text-gray-600 max-w-3xl">
@@ -13,6 +13,7 @@ export default function Privacy() {
             and protect your personal information, as well as the terms governing your use
             of our services.
           </p>
+          <p className="font-bold text-[#000080] mt-5">Effective: 06th September 2025</p>
         </div>
       </div>
 
@@ -23,126 +24,90 @@ export default function Privacy() {
           <h2 className="text-2xl font-bold text-[#006400] mb-8">Privacy Policy</h2>
           
           <div className="space-y-8">
+            {/* 0. Information We Collect */}
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Introduction</h3>
+              <p className="text-gray-600 mb-4">Stove Africa Limited("we", "our", "us",) values your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the Stove App. By using our App, you agree to the terms outlined in this policy</p>
+             
+            </div>
             {/* 1. Information We Collect */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Information We Collect</h3>
-              <p className="text-gray-600 mb-4">We collect various types of information to provide and improve our services to you:</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Information We Collect</h3>
+              <p className="text-gray-600 mb-4">When you use Stove App, we may collect the following information:</p>
               <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                <li><span className="font-medium">Personal Identifiable Information (PII):</span> Name, email address, phone number, physical address, and payment information (e.g., credit card details) when you register for an account, order services, or contact us.</li>
-                <li><span className="font-medium">Usage Data:</span> Information about how you access and use our services, including IP address, browser type, operating system, pages visited, and time spent on our app or website.</li>
-                <li><span className="font-medium">Location Data:</span> With your consent, we may collect precise location data for gas delivery, waste disposal, and logistics services.</li>
+                <li><span className="font-medium">Personal Identifiable Information (PII):</span> Full name, email address, phone number, home address, billing address and images.</li>
+                <li><span className="font-medium">Location Information:</span> With your consent, we may collect GPS data for gas delivery, waste disposal, and logistics services.</li>
+                <li><span className="font-medium">Payment Information:</span> Processed securely via third-party providers(e.g, Paystack, Flutterwave). We do not store your card details.</li>
+                <li><span className="font-medium">Usage Data:</span> Device type, app version, and usage patterns for app improvement.</li>
               </ul>
             </div>
 
             {/* 2. How We Use Your Information */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">2. How We Use Your Information</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">3. How We Use Your Information</h3>
+               <p className="text-gray-600 mb-4">We use collected data to:</p>
               <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                <li>To provide and maintain our services.</li>
-                <li>To process transactions and send related notifications.</li>
-                <li>To improve, personalize, and expand our services.</li>
-                <li>To communicate with you, respond to inquiries, and provide customer support.</li>
-                <li>To monitor the usage of our services and detect, prevent, and address technical issues.</li>
-                <li>To comply with legal obligations.</li>
+                <li>To verify your identity and contact you when necessary.</li>
+                <li>Improve our app performance, security and user experience.</li>
+                <li>Send important updates and push notifications about you order and transaction.</li>
+                <li>Comply with legal or regulatory obligations.</li>
+              </ul>
+            </div>
+            {/* 2. How We Share your infomation */}
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">4. How We Share Your Information</h3>
+               <p className="text-gray-600 mb-4">We do not share or rent your data. However we may share your information with:</p>
+              <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                <li><span className="font-medium">Delivery Partners/Riders:</span> To fulfill your delivery requests.</li>
+                <li><span className="font-medium">Payment Processors:</span> To complete transactions securely.</li>
+                <li><span className="font-medium">Regulators or Law Enforcement:</span> If required by law.</li>
+                <li><span className="font-medium">Service Providers:</span> For analytics, SMS/Email/WhatsApp notifications, and app hosting.</li>
               </ul>
             </div>
 
             {/* 3. Sharing Your Data */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Sharing Your Data</h3>
-              <p className="text-gray-600 mb-4">We do not sell your personal data to third parties. We may share your information with:</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">5. Data Security</h3>
+              <p className="text-gray-600 mb-4">We implement strict security measures to protect your data, including encrypting, secure servers, and restricted access. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security</p>
+      
+            </div>
+
+            {/* 5. Your Data Protection Rights */}
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">6. Your Rights</h3>
+              <p className="text-gray-600 mb-4">You have rights to:</p>
               <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                <li>Service providers who assist us in operating our business (e.g., payment processors, delivery partners).</li>
-                <li>Law enforcement or government agencies when required by law to protect our rights.</li>
-                <li>Third parties in connection with a merger, acquisition, or asset sale.</li>
+                <li>Access, update, or correct your personal informaion.</li>
+                <li>Request deletion of your account and data.</li>
+                <li>Opt out of marketing messages.</li>
               </ul>
-            </div>
+              <p className="text-sm text-gray-600 mt-3">To exercise your rights, contact us at info@stove.com.ng</p>
 
-            {/* 4. Your Data Protection Rights */}
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">4. Your Data Protection Rights</h3>
-              <p className="text-gray-600 mb-4">Depending on your location, you may have the following data protection rights:</p>
-              <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                <li>The right to access, update, or delete the information we have on you.</li>
-                <li>The right to rectify any inaccurate or incomplete information.</li>
-                <li>The right to object to our processing of your personal data.</li>
-                <li>The right to withdraw your consent at any time.</li>
-              </ul>
             </div>
-          </div>
-        </section>
-
-        {/* Terms of Service Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-[#006400] mb-8">Terms of Service</h2>
-          
-          <div className="space-y-8">
-            {/* 1. Acceptance of Terms */}
+            {/* 6. Children Privacy */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Acceptance of Terms</h3>
-              <p className="text-gray-600">By accessing or using the Stove Africa website or mobile application (the "Service"), you agree to be bound by these Terms of Service ("Terms") and our Privacy Policy. If you do not agree to these Terms, please do not use the Service.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">7. Children Privacy</h3>
+              <p className="text-gray-600 mb-4">Stove App is not intended for children under 13. we do not knowingly collect data from minors. if you believe a child has provided us with personal data, please <Link href="/contact" className="text-[#006400] hover:underline">contact us</Link> for removal</p>
             </div>
-
-            {/* 2. User Accounts */}
+            {/* 7. Cookies and Tracking */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">2. User Accounts</h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                <li>When you create an account with us, you must provide information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</li>
-                <li>You are responsible for safeguarding the password that you use to access the Service.</li>
-                <li>You agree not to disclose your password to any third party.</li>
-                <li>You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</li>
-              </ul>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">8. Cookies and Tracking</h3>
+              <p className="text-gray-600 mb-4">Stove App may use cookies, Firebase, or similar tools to improve performance, analytics and user experence. You can manage cookies through your device setting</p>
             </div>
+            {/* 8. Cookies and Tracking */}
 
-            {/* 3. Service Availability and Modifications */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Service Availability and Modifications</h3>
-              <p className="text-gray-600">Stove Africa reserves the right to withdraw or amend our Service, and any service or material we provide on the Service, in our sole discretion without notice. We will not be liable if for any reason all or any part of the Service is unavailable at any time or for any period.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">9. Changes to this Privacy Policy</h3>
+              <p className="text-gray-600 mb-4">We may update this Privacy Policy from time to time. Any changes will be posted on this page with the updated "Effective Date"</p>
             </div>
-
-            {/* 4. Prohibited Uses */}
+            {/* 9.Contact Us */}
+        
+            
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">4. Prohibited Uses</h3>
-              <p className="text-gray-600 mb-4">You may use the Service only for lawful purposes and in accordance with these Terms. You agree not to use the Service:</p>
-              <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                <li>In any way that violates any applicable national or international law or regulation.</li>
-                <li>To engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Service.</li>
-                <li>To transmit, or procure the sending of, any advertising or promotional material.</li>
-                <li>To impersonate or attempt to impersonate Stove Africa, a Stove Africa employee, another user, or any other person or entity.</li>
-              </ul>
-            </div>
-
-            {/* 5. Intellectual Property */}
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">5. Intellectual Property</h3>
-              <p className="text-gray-600">The Service and its original content, features, and functionality are and will remain the exclusive property of Stove Africa and its licensors. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Stove Africa.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* General Provisions Section */}
-        <section>
-          <h2 className="text-2xl font-bold text-[#006400] mb-8">General Provisions</h2>
-          
-          <div className="space-y-8">
-            {/* 1. Changes to This Policy & Terms */}
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Changes to This Policy & Terms</h3>
-              <p className="text-gray-600">We may update our Privacy Policy and Terms of Service from time to time. We will notify you of any changes by posting the new Policy and Terms on this page. You are advised to review these documents periodically for any changes.</p>
-            </div>
-
-            {/* 2. Governing Law */}
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Governing Law</h3>
-              <p className="text-gray-600">These Terms shall be governed and construed in accordance with the laws of Kenya, without regard to its conflict of law provisions.</p>
-            </div>
-
-            {/* 3. Contact Us */}
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Contact Us</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">10. Contact Us</h3>
               <p className="text-gray-600">If you have any questions about this Privacy Policy or Terms of Service, please contact us:</p>
               <p className="text-gray-600">By email: support@stoveafrica.com</p>
-              <p className="text-gray-600">By visiting this page on our website: <a href="/contact" className="text-[#006400] hover:underline">Contact Us</a></p>
+              <p className="text-gray-600">By visiting this page on our website: <Link href="/contact" className="text-[#000080] hover:underline">Contact Us</Link></p>
             </div>
           </div>
         </section>

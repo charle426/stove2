@@ -73,6 +73,11 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
+                  Blogs
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -81,22 +86,22 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/installation" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
                   Gasoline
                 </Link>
               </li>
               <li>
-                <Link href="/repair" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
                   Bill Payments
                 </Link>
               </li>
               <li>
-                <Link href="/emergency" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
                   Waste Management
                 </Link>
               </li>
               <li>
-                <Link href="/safety" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
                   Logistics Services
                 </Link>
               </li>
