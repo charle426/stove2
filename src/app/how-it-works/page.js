@@ -1,6 +1,5 @@
-
+"use client";
 import { CreditCard, Download, ShoppingCart, Truck, UserPlus } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HowItWorks() {

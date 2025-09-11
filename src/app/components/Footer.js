@@ -78,6 +78,11 @@ export default function Footer() {
                   Blogs
                 </Link>
               </li>
+              <li>
+                <Link href="/careers" className="text-gray-300 hover:text-white transition-colors">
+                  Careers
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -120,9 +125,6 @@ export default function Footer() {
             </Link>
             <Link href="/privacy#terms" className="text-gray-400 hover:text-white text-sm transition-colors">
               Terms of Service
-            </Link>
-            <Link href="/cookies" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Cookie Policy
             </Link>
           </div>
         </div>

@@ -1,5 +1,5 @@
 'use client'
-import React, { useContext, createContext } from "react";
+import React, { createContext } from "react";
 import { collection, getDocs,} from "firebase/firestore";
 import { db } from "../../../firebaseConfig";
     
@@ -26,7 +26,7 @@ export default function Context({ children }) {
         );
       };
       fetchData();
-    }, []);
+    }, [blogsCollection]);
   return (
     <AppContext.Provider value={{server, adminAuth, setAdminAuth}}>
       {children}
@@ -36,5 +36,10 @@ export default function Context({ children }) {
 
 
 export const useGlobalContext = () => {
-  return useContext(AppContext);
+  const context = React.useContext(AppContext);
+  if (context === null) {
+    // Return a safe default object to prevent SSR/prerender errors
+    return { server: null, adminAuth: false, setAdminAuth: () => {} };
+  }
+  return context;
 };
