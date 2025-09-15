@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Context from "./components/context";
+import Script from "next/script";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -66,6 +67,10 @@ export default function RootLayout({ children }) {
   return (
     <Context>
        <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <Script src="https://cdn.tailwindcss.com" strategy="beforeInteractive" />
+      </head>
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
